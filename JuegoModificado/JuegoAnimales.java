@@ -4,9 +4,11 @@ public class JuegoAnimales {
 
    public static void main(String[] args){
 
+        System.out.println("//***********Nivel 1ga**********\\");
         Nivel1 obj = new Nivel1();
         obj.imprimePregustas();
 
+        System.out.println("//***********Nivel 2**********\\");
         Nivel2 obj2 = new Nivel2();
         obj2.imprimePregustas();
 
