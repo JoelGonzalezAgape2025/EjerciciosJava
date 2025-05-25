@@ -1,5 +1,5 @@
 package UltimosEjercicios;
-
+ 
 public abstract class Personal {
 
     protected int id;

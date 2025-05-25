@@ -3,12 +3,12 @@ package UltimosEjercicios;
 public class Empleado extends Personal {
 
     private double salarioBase;
-    private double bonificaciones;
+    private double bonificacionesMes;
 
-    public Empleado(int id, String nombre, String apellido, int edad, double salarioBase, double bonificaciones) {
+    public Empleado(int id, String nombre, String apellido, int edad, double salarioBase, double bonificacionesMes) {
         super(id, nombre, apellido, edad);
         this.salarioBase = salarioBase;
-        this.bonificaciones = bonificaciones;
+        this.bonificacionesMes = bonificacionesMes;
     }
 
 
@@ -21,11 +21,11 @@ public class Empleado extends Personal {
     }
 
     public double getBonificaciones() {
-        return bonificaciones;
+        return bonificacionesMes;
     }
 
-    public void setBonificaciones(double Bonificaciones) {
-        this.bonificaciones = Bonificaciones;
+    public void setBonificaciones(double BonificacionesMes) {
+        this.bonificacionesMes = BonificacionesMes;
     }
 
     @Override
@@ -36,7 +36,7 @@ public class Empleado extends Personal {
 
     @Override
     public void calcularSueldo(){
-        double sueldoTotal = salarioBase + bonificaciones; 
+        double sueldoTotal = salarioBase + bonificacionesMes; 
          System.out.println("El sueldo total de " + getNombre() + " es: " + sueldoTotal);
     }
 

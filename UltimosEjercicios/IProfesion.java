@@ -2,6 +2,6 @@ package UltimosEjercicios;
 
 public interface IProfesion {
 
-    double calcularSueldo();
+    abstract double calcularSueldo();
     
 }
